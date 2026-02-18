@@ -1,11 +1,35 @@
 <!doctype html>
 <html>
 <head>
+	
 <meta charset="UTF-8">
 <title>Sinners | Daniela Andrade, 2026</title>
 <style type="text/css">
-body {
+@font-face {
+    font-family: 'brother_1816regular';
+    src: url('07-brother1816-regular-webfont.woff2') format('woff2'),
+         url('07-brother1816-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+	}
+	@font-face {
+    font-family: 'dust_westitalic';
+    src: url('dust_west-webfont.woff2') format('woff2'),
+         url('dust_west-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+video {
+    width: 50%;
+}
+	
+	
+	body {
     margin: 0;
+    background-color: ;	
+    background-color: #130000;
+	 cursor: url('Guitar.png'), auto;
 }
 wrapper {
     width: 1366px;
@@ -13,23 +37,223 @@ wrapper {
     display: block;
 }
 header {
-    background-color: red;
-    height: 100px;
+    background-color: #090808;
+    height: 400px;
+    background-image: url(Sinners%20Title.png),url(sin.png), -webkit-linear-gradient(92deg,rgba(12,11,11,1.00) 8.34%,rgba(35,7,1,1.00) 20.06%,rgba(94,43,6,1.00) 53.17%,rgba(24,1,1,1.00) 85.86%,rgba(24,1,1,1.00) 92.99%);
+    background-size: 700px;
+    background-repeat: no-repeat,
+        no-repeat;
+    background-position: center 150px,   
+        center center,  
+        center;
+    background-size: contain;
+    margin-bottom: 0px;
+    padding-bottom: 10px;
 }
-footer {
-    height: 100px;
-    background-color: green;
+		
+  
+buttons {
+    font-family: 'brother_1816regular';
+    margin: auto;
+    background-color: #260101;
+    text-align: center;
 }
+ul {
+    margin: 0;
+	padding:0;
+	text-align: center;
+}
+
+li {
+    box-sizing: border-box;
+    border-top-left-radius: 20px;
+    padding-top: 20px;
+    padding-right: 60px;
+    padding-left: 60px;
+    padding-bottom: 20px;
+    color: #F4E409;
+    background-color: #130000;
+    display: inline-block;
+    font-size: 40px;
+    font-family: 'dust_westitalic';
+    font-weight: normal;
+    text-align: center;
+    letter-spacing: 2px;
+	}
+	
+	li:hover {
+    background-color: #F4E409; 
+    color: #130000;         
+    transition: 0.3s;        
+}
+
 main {
+    margin-top: 50px;
+    margin-bottom: 100px;
+    padding: auto;
+    background-image: url(sinback.jpg);
+    background-repeat: no-repeat;
+    background-size: 250% auto;
+    top: -100px;
+    left: -100px;
 }
+
+	
+	.media-section {
+    display: flex;
+    justify-content: center; 
+    align-items: center;   
+    width: 90%;             
+    margin: auto;
+    }
+
+    
+    .media-section iframe {
+    width: 60%;
+    display: block;
+    position: relative;     
+    z-index: 1;             
+    box-shadow: 0 0 20px;
+    color: #E49A1B;
+	}
+
+    
+    .media-section img {
+        width: 55%; 
+        position: relative;   
+        z-index: 2;         
+        margin-left: -150px;
+	}
+		
+		
+	
+	
+	synopsis{
+    display: inline-block;
+    width: auto;
+    margin-top:0px;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 90px;
+    height: 1000px;
+    position: center;
+    color: #F8C907;
+    text-align: center;
+	}
+	
+	h1{  
+		font-family: 'dust_westitalic';
+		
+	}
+	
+	h2{
+    font-family: 'brother_1816regular';
+    padding-top: 20px;
+    padding-right: 250px;
+    padding-left: 250px;
+    padding-bottom: 20px;
+    font-style: italic;		
+	}
+	h3{
+    font-family: 'brother_1816regular';
+    padding-top: 20px;
+    padding-right: 250px;
+    padding-left: 250px;
+    padding-bottom: 100px;
+    text-align: justify;
+    font-size: x-large;
+   
+	}
+
+
+.overlap-img {
+    /* width: 70%;
+    display: block;
+    margin-top: -150px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 10;*/
+    width: 70%;           
+    display: block;
+    margin-top: -240px;   
+    margin-left: auto;   
+    margin-right: auto;
+    position: relative;
+    z-index: 5;
+	}
+.bottom {
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    background-color: #030627;
+    background-image: -webkit-linear-gradient(270deg,rgba(1,2,18,1.00) 8.69%,rgba(3,6,39,1.00) 43.73%,rgba(1,2,18,1.00) 81.26%);
+    background-image: -moz-linear-gradient(270deg,rgba(1,2,18,1.00) 8.69%,rgba(3,6,39,1.00) 43.73%,rgba(1,2,18,1.00) 81.26%);
+    background-image: -o-linear-gradient(270deg,rgba(1,2,18,1.00) 8.69%,rgba(3,6,39,1.00) 43.73%,rgba(1,2,18,1.00) 81.26%);
+    background-image: linear-gradient(180deg,rgba(1,2,18,1.00) 8.69%,rgba(3,6,39,1.00) 43.73%,rgba(1,2,18,1.00) 81.26%);
+}
+	
+	
+	 footer {
+    height: 100px;
+    background-color: black;
+    color: #F4E409;
+    text-align: center;
+}		 
+	
 </style>
 </head>
 
 <body>
+	
 <wrapper>
   <header></header>
-  <main>A</main>
-  <footer></footer>
+  <buttons>
+	  <ul>
+		<li class="Home">HOME</li><li class="Trailer">TRAILER</li><li class="Cast">CAST</li><li class="Tickets">TICKETS</li>
+	  </ul>
+	
+	</buttons>
+  <main>
+	<div class="media-section">
+	
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/fHZV7miEMpo?si=id0wuZ3DmI6IkUfv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+			</iframe>
+      
+	 <img src="sin4.png" alt="Sinners movie poster">
+		
+	
+	
+	
+	</div>
+	  
+	<img src="Sin 5!.png" alt="Juke Joint" style="width:100%; height:auto;">
+	 
+	
+	  
+	  
+
+	
+	</main>
+		  <synopsis>
+<h1>"You keep dancing with the devil, one day he's gonna follow you home."</h1>
+<h2>From visionary writer-director Ryan Coogler (Black Panther, Creed) and starring Michael B. Jordan in a tour-de-force dual role, Sinners is a genre-defying supernatural thriller that reimagines vampire folklore through the lens of the Jim Crow South.</h2>
+
+<h3>Set in 1932 Mississippi, identical twin brothers Smoke and Stack (Jordan) return to their hometown in the Delta to escape a violent past with the Chicago mob. Armed with stolen cash and a dream of redemption, they open a juke joint to serve as a sanctuary for their community, anchored by the transcendent blues music of their young cousin, Sammie.
+But their fresh start is shattered when they encounter an ancient, bloodthirsty evil led by the malevolent Remmick (Jack O’Connell). As a wave of supernatural terror descends, the brothers must fight to protect their people from monsters that thrive in the shadows—and the all-too-human horrors of racial oppression.</h3>
+			  
+    <img src="sin7.png" alt="Sinners Overlay" class="overlap-img"> </synopsis>
+	
+  <div class="bottom">
+	  <img src="Sin9.png" alt="vampires"
+	style="width:100%; height:auto;">
+		   </div>
+	
+  <footer>&copy; 2026, Daniela Andrade.
+<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+	</footer>
 </wrapper>
+	
 </body>
 </html>
