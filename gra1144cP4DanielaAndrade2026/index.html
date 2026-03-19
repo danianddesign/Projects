@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+  <title>Broward Center of Performing Arts Theatre | Daniela Andrade, 2026</title>
+  
+  <style type="text/css">
+    body {
+      margin: 0;
+      color: white; 
+      background-color: #200E33; 
+    }
+    body {
+  animation: fadeIn 1.2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+    .wrapper {
+      width: 1366px;
+      max-width: 100%; 
+      margin: 0px auto; 
+      display: block;
+    }
+
+    footer {
+    display: block;
+    height: 163px;
+    background-color: #14001E;
+    text-align: center;
+    padding-top: 43px;
+    }
+    
+    section {
+      height: 900px; 
+      background-size: cover;
+    }
+    
+    #home {
+  background-image: url(banner.jpg);
+  background-size: cover;
+  background-position: center; 
+  height: 500px; 
+  display: flex; /* Centers the button perfectly inside the banner */
+  align-items: center;
+  justify-content: center;
+}
+    
+   /* --- MEDIA SECTION STAGE EFFECTS --- */
+    .video-stage-container {
+      position: relative;
+      width: 100%; /* Spans the full width of the wrapper */
+      height: 840px; /* Fills the rest of your 900px section (leaving room for the nav) */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden; /* Keeps the frame neatly inside this section */
+    }
+main #media .video-stage-container {
+}
+
+    .stage-frame {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* This forces the curtains to stretch and cover the entire section */
+      z-index: 2; 
+      pointer-events: none; 
+    }
+
+    .stage-video {
+    position: absolute;
+    z-index: 1;
+    /* This perfectly centers the video no matter what size the screen is */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* Adjust these percentages to make the video fit the "hole" in your specific frame */
+    width: 1300px;
+    height: 830px;
+    border-radius: 10px;
+    }
+    
+    nav {
+      background-color: black;
+      text-align: left;
+      font-family: "Playfair Display", serif;
+      font-size: 26px; 
+      margin: 0pt;
+    }
+    
+    ul li img {
+      width: 283px;
+      text-align: left;
+      vertical-align: middle; 
+    }
+    
+    ul {
+      padding: 0;
+      margin: 0;
+    }
+    
+    li {
+      display: inline-block;
+      padding-top: 9px;
+      padding-right: 42px;
+      padding-left: 9px;
+      padding-bottom: 13px;
+      background-position: 0% 0%;
+      margin-top: 0px;
+      margin-bottom: -6px;
+      font-size: 16pt;
+      text-align: left;
+      word-spacing: 2px;
+      position: static;
+    }
+    
+    /* --- NEW NAV HOVER EFFECT --- */
+    nav ul a {
+      color: white;
+      text-decoration: none;
+      position: relative;
+      padding-bottom: 5px;
+      transition: color 0.3s ease;
+    }
+
+    nav ul a::after {
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      display: block;
+      margin-top: 5px;
+      right: 0;
+      background: #D3A4E5;
+      transition: width 0.3s ease, left 0.3s ease;
+    }
+
+    nav ul a:hover {
+      color: #D3A4E5;
+    }
+
+    nav ul a:hover::after {
+      width: 100%;
+      left: 0;
+    }
+    /* ---------------------------- */
+    
+    .calendar {
+      width: 365px;
+      height: 300px;
+    }
+    
+    #location {
+    background-image: url(FTL.png);
+    background-size: cover;
+    height: 538px;
+    padding-left: 0px;
+    position: relative;
+    }
+    
+    .tickets-btn {
+      color: white;
+      font-family: "Playfair Display", serif;
+      font-weight: normal;
+      text-decoration: none;
+      text-shadow: 5px 0px 50px #EFEDF1;
+      border-radius: 5px;
+      border: thick groove #B57FC6;
+      font-size: 40px;
+      padding: 20px; 
+      display: block;
+      width: 88%;
+      text-align: center;
+      position: absolute;
+      top: 350px;
+      left: 74px;
+      box-sizing: border-box; 
+      background-image: linear-gradient(180deg, rgba(120,58,215,0.48) 0%, rgba(120,58,215,0.64) 100%);
+      transition: all 0.3s ease; 
+    }
+      
+    .tickets-btn:hover {
+      background-image: linear-gradient(180deg, rgba(120,58,215,0.7) 0%, rgba(120,58,215,0.9) 100%);
+      box-shadow: 0px 10px 20px 0px rgba(1, 2, 18, 0.5);
+      border-color: #D3A4E5; 
+      transform: translateY(-3px); 
+    }
+    
+    .content-row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 17px;
+      margin-right: auto;
+      margin-left: auto;
+      margin-bottom: 0px;
+      width: 100%;
+      max-width: 1366px;
+      box-sizing: content-box;
+      background-color: #11011D;
+      padding-top: 16px;
+      padding-bottom: 16px;
+    }
+
+    .my-calendar {
+      width: 431px;
+      max-width: 494px;
+      height: 406px;
+      border-radius: 10px;
+      background-color: #000000;
+      margin-top: 0px;
+      padding: 24px 20px;
+    }
+
+    .carousel-container {
+      display: flex;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      gap: 10px;
+      width: 516px;
+      max-width: 421px;
+      background-color: #11011D;
+      scrollbar-width: none;
+      border-radius: 10px;
+      padding-left: 22px;
+      height: 486px;
+      top: 0px;
+    }
+
+    .carousel-container::-webkit-scrollbar {
+      display: none;
+    }
+
+    .carousel-container img {
+      flex: 0 0 100%;
+      scroll-snap-align: center;
+      width: 81px;
+      height: 471px;
+      object-fit: contain;
+      top: 0px;
+    }
+
+    #Shows {
+      height: auto; 
+      padding: 40px 20px;
+      text-align: center;
+      font-family: "Playfair Display", serif;
+      background-image: url(backgroun2.jpg);
+    }
+    
+    main #Shows h2 {
+      font-size: 40px;
+    }
+
+    .shows-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+      grid-auto-rows: 400px; 
+      gap: 15px; 
+      max-width: 1366px;
+      margin: 20px auto;
+    }
+
+    .show-card.tall { grid-row: span 2; }
+    .show-card.wide { grid-column: span 2; }
+
+    .show-card {
+      position: relative; 
+      display: block;
+      border-radius: 8px; 
+      overflow: hidden;   
+    }
+
+    .show-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;  
+      transition: transform 0.4s ease; 
+    }
+
+    .show-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(80, 80, 80, 0); 
+      color: transparent; 
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      transition: all 0.3s ease; 
+    }
+
+    .show-card:hover .show-overlay {
+      background-color: rgba(80, 80, 80, 0.85); 
+      color: white; 
+    }
+
+    .show-card:hover img {
+      transform: scale(1.05);
+      max-width: none;
+    }
+
+    .map {
+    display: block;
+    margin-left: 615px;
+    width: 501px;
+    height: 335px;
+    margin-top: -210px;
+    }
+    
+    #location h2 strong {
+      font-size: 64px;
+      padding-left: 18px;
+      word-spacing: -5px;
+      padding-top: 0px;
+      text-align: center;
+      width: 31px;
+      left: -28px;
+    }
+
+    /* --- NEW LOCATION BUTTONS --- */
+    .location-btn-container {
+      margin-left: 50px;
+      margin-top: 20px;
+      display: flex;
+      gap: 20px;
+      flex-direction: column; /* Stacks the buttons vertically */
+      width: max-content;
+    }
+
+    .info-btn {
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-decoration: none;
+    padding-top: 15px;
+    padding-right: 30px;
+    padding-left: 26px;
+    padding-bottom: 15px;
+    border-radius: 5px;
+    border: 2px groove #B57FC6;
+    font-size: 20px;
+    text-align: center;
+    background-image: linear-gradient(180deg, rgba(120,58,215,0.48) 0%, rgba(120,58,215,0.64) 100%);
+    transition: all 0.3s ease;
+    }
+
+    .info-btn:hover {
+      background-image: linear-gradient(180deg, rgba(120,58,215,0.7) 0%, rgba(120,58,215,0.9) 100%);
+      box-shadow: 0px 5px 15px 0px rgba(1, 2, 18, 0.5);
+      border-color: #D3A4E5; 
+      transform: translateY(-2px);
+    }
+	  
+   html {
+  scroll-behavior: smooth;
+}
+	  .carousel-container img {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  cursor: pointer;
+}
+
+.carousel-container img:hover {
+  transform: scale(1.03); 
+  filter: brightness(1.2); 
+	  }
+	
+	section,.content-row{
+  box-shadow: inset 0px 15px 20px -15px rgba(0, 0, 0, 0.8), 
+              inset 0px -15px 20px -15px rgba(0, 0, 0, 0.8);
+}
+
+  </style>
+</head>
+
+<body>
+  <div class="wrapper"> 
+    <header></header>
+    <main>
+      
+      <nav>
+        <ul>
+          <li><a href="index.html"><img src="Broward logo.png" alt="Broward Logo"></a></li>
+          <li><a href="#home">Tickets</a></li> 
+          <li><a href="#Shows">Shows</a></li>
+          <li><a href="#media">Media</a></li>
+          <li><a href="#location">Location</a></li>
+          <li><a href="#Support">Support</a></li>
+        </ul>
+      </nav>
+      
+      <section id="home">
+        <a href="#Shows" class="tickets-btn">Get Tickets</a>
+      </section>
+      
+      <div class="content-row">
+        <iframe src="https://calendar.google.com/calendar/embed?src=dc395c84d64e78e279e99165de34d22c3d34558a19abd6e18ab4c27206e49da6%40group.calendar.google.com&ctz=America%2FNew_York" style="border: 0" frameborder="0" scrolling="no" class="my-calendar"></iframe>
+            
+        <div class="carousel-container">
+          <img src="Hellsk.jpg" alt="First slide image"> 
+          <img src="Six.jpg" alt="Second slide image">
+          <img src="WLIA.jpg" alt="Third slide image">
+        </div>
+      </div> 
+
+      <section id="Shows">
+        <h2>Upcoming Shows</h2>
+        
+        <div class="shows-grid">
+          <a href="#Shows" class="show-card tall">
+            <img src="Ballet.jpg" alt="Show 1">
+            <div class="show-overlay">
+              <h3>The Miami Ballet</h3>
+              <p>Click for Tickets</p>
+            </div>
+          </a>
+
+          <a href="#Shows" class="show-card wide">
+            <img src="Phantom .jpg" alt="Show 2">
+            <div class="show-overlay">
+              <h3>Phantom of the Opera</h3>
+              <p>Click for Tickets</p>
+            </div>
+          </a>
+
+          <a href="#Shows" class="show-card">
+            <img src="MSND .jpg" alt="Show 3">
+            <div class="show-overlay">
+              <h3>Midsummer Nights Dream</h3>
+              <p>Click for Tickets</p>
+            </div>
+          </a>
+          
+          <a href="#Shows" class="show-card">
+            <img src="Hells.jpg" alt="Show 4">
+            <div class="show-overlay">
+              <h3>Hells Kitchen</h3>
+              <p>Click for Tickets</p>
+            </div>
+          </a>
+        </div>
+      </section>
+      
+      
+        <section id="media">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#Shows">Shows</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </nav>
+          
+        
+        <div class="video-stage-container">
+          <iframe class="stage-video" width="560" height="315" src="https://www.youtube.com/embed/cI_v_AgpZ5Y?si=qn_dTRCpI74Wt5QN&autoplay=1&mute=1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+          <img class="stage-frame" src="stage-frame.png" alt="Theatrical Curtains">
+        </div>
+
+      </section> 
+     
+      
+      <section id="location">
+        <nav>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#media">Media</a></li>
+            <li><a href="#location">Location</a></li>
+          </ul>
+        </nav>
+        <h2><strong>Directions &amp; Parking</strong></h2>
+        
+        <div class="location-btn-container">
+          <a href="#" class="info-btn">Click here for more information on Parking</a>
+          <a href="#" class="info-btn">Click here for more information on Directions</a>
+        </div>
+        
+        <div class="map-container">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3582.4988229983995!2d-80.1481546849718!3d26.115286983477196!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d900fe329971eb%3A0x6b4db36fc5817c76!2sBroward%20Center%20for%20the%20Performing%20Arts!5e0!3m2!1sen!2sus!4v1680000000000!5m2!1sen!2sus" width="600" height="450" class="map" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </section>
+      
+    </main>
+    <footer><footer><div> &copy; 2026, Daniela Andrade.
+<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+			</div> 
+	  </footer></footer>
+  </div> 
+</body>
+</html>
