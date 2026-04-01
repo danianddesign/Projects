@@ -1,0 +1,127 @@
+<!doctype html>
+<html><!-- InstanceBegin template="/Templates/parent.dwt" codeOutsideHTMLIsLocked="false" -->
+<head><link rel="stylesheet" href="https://use.typekit.net/zpd8hzo.css">
+<meta charset="UTF-8">
+<!-- InstanceBeginEditable name="doctitle" -->
+<title>Raye | Photo Gallery | Daniela Andrade, 2026</title>
+<!-- InstanceEndEditable -->
+<link href="styles.css" rel="stylesheet" type="text/css">
+<!-- InstanceBeginEditable name="head" -->
+<!-- InstanceEndEditable -->
+</head>
+
+<body>
+<wrapper>
+  <header>
+    <div><img src="3banner.png" alt="" width="" height="" class="banner">
+      
+    </div>
+</header>
+  <nav>
+    <ul>
+    
+
+   <a href="news.html"><li>News</li> </a>
+   <a href="music.html"><li>Music</li></a> 
+   <a href="videos.html"><li>Videos</li> </a>
+   <a href="concerts.html"><li>Concerts</li></a> 
+	  
+ <a href="index.html"><li><img src="Raye%20logo.png" alt="Home" class="Rlogo"></li></a>
+      
+   <a href="photos.html"><li>Photos</li> </a>
+      
+   <a href="mailing.html"> <li>Mailing list</li></a> 
+   <a href="merch.html"><li>Store</li></a>
+   <a href="blog.html"><li>Blog</li></a>
+   </ul>
+</nav>
+<div class="promo">
+  <img src="rbanner.jpeg" alt="Promo Image" class="Promo"> 
+  
+  <div class="promo-text">
+    <h1>ALBUM OUT NOW!</h1>
+    
+    <a href="#" class="promo-btn">Listen Now</a>
+  </div>
+</div>
+	
+  <!-- InstanceBeginEditable name="EditRegion3" -->
+  <main>
+	  <div class="photo-wrapper">
+	  <h2 class="photos-title">THE ARCHIVES</h2>
+	  
+    <div class="slideshow-wrapper glass-box">
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="slides1.jpg">
+    <div class="caption-text">01 // THE TOUR 2026</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="slides2.jpg">
+    <div class="caption-text">02 // tiny desk concert</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="slides3.jpg">
+    <div class="caption-text">03 // RAYE LIVE</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div><script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+ </div>
+	</main>
+  <!-- InstanceEndEditable -->
+  <section class="privacy">
+    <div class="privacy-container">
+      <a href="privacy.html" class="privacy-btn">Privacy Statement</a>
+    </div>
+  </section>
+	
+<footer>&copy; 2026, Daniela Andrade.
+<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+	</wrapper>
+
+</body>
+<!-- InstanceEnd --></html>
