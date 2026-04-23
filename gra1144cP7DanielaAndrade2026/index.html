@@ -1,0 +1,212 @@
+<!doctype html>
+<html>
+<head><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap" rel="stylesheet">
+<meta charset="UTF-8">
+<title>Travelocity | Daniela Andrade, 2026</title>
+	<script src="https://kit.fontawesome.com/d19c9f9dc3.js" crossorigin="anonymous"></script>
+<style type="text/css">
+body {
+    margin: 0px;
+    background-image: url(santorinin.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #577EE2;
+    min-height: 111vh;
+    display: block;
+    flex-direction: column;
+    background-attachment: fixed;
+}
+header {
+    background-image: url(logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 140px;
+    background-color: #004074;
+    margin-bottom: 10px; 
+    width: 100%;
+	}
+wrapper {
+    width: 1366px;
+    margin: 0 auto;
+    display: block;
+    min-height: calc(100vh - 250px);
+	}
+#Tabs1 ul {
+    background-image: none;
+    border: none;
+    background-color: transparent;
+}
+#Tabs1 {
+    background-image: none;
+    background-color: rgba(255, 255, 255, 0.50); 
+    border: none;
+    border-radius: 0 0 10px 10px;
+	}
+	
+	#Tabs1 ul li {
+    flex: 1; /* Makes every tab the same width */
+    text-align: center;
+    list-style: none;
+		transition: background 0.3s ease; /* Smooth hover fade */}
+	#Tabs1 ul li:hover {
+    background-color: rgba(255, 255, 255, 0.40);
+}
+	
+#Tabs1 ul li i {
+    height: auto;
+    font-size: 21px;
+    color: rgba(255,178,0,1.00);
+}
+	#tabs-1 div{
+		display:grid;
+		grid-template-columns:16% 16% 16% 16% 16% 16%;
+		gap:10px;
+	}
+input, select {
+    border-radius: 10px;
+    padding: 10px;
+}
+h1 {
+    padding: 20px;
+    margin: 0px;
+}
+#tabs-2 {
+}
+footer {
+    display: block;
+    width: 100%;
+    background-color: rgba(13,63,159,1.00);
+    color: rgba(255,255,255,1.00);
+    text-align: center;
+    padding: 40px 0; /* More padding makes it look more professional */
+    background-image: linear-gradient(344deg, ...); /* keep your gradient code */
+    margin-top: 50px; 
+    clear: both;
+    background-image: linear-gradient(344deg,rgba(255,255,255,1.00) 0%,rgba(255,255,255,1.00) 0%,rgba(55,53,159,1.00) 0%,rgba(61,96,185,1.00) 29.49%,rgba(166,144,206,1.00) 47.23%,rgba(166,144,206,1.00) 68.62%,rgba(117,121,196,1.00) 79.99%,rgba(64,83,187,1.00) 95.35%);
+    margin-top: 50px;
+    
+}
+	input[type="submit"].search {
+    background-color: #FFB200; /* Travelocity Orange */
+    color: #004074; /* Deep Blue text */
+    border: none;
+    font-weight: bold;
+    padding: 10px 25px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Makes the hover smooth */
+    border-radius: 10px;
+}
+	input[type="submit"].search:hover {
+    background-color: #004074; /* Flips to blue on hover */
+    color: #ffffff; /* Text turns white */
+    transform: translateY(-3px); /* Lifts the button slightly */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3); /* Adds a professional shadow */
+}
+	p{
+    font-family: "M PLUS Rounded 1c", sans-serif;
+    font-weight: 900;
+    font-size: large;
+	}
+	
+</style>
+<link href="jQueryAssets/jquery.ui.core.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.theme.min.css" rel="stylesheet" type="text/css">
+<link href="jQueryAssets/jquery.ui.tabs.min.css" rel="stylesheet" type="text/css">
+<script src="jQueryAssets/jquery-1.11.1.min.js"></script>
+<script src="jQueryAssets/jquery.ui-1.10.4.tabs.min.js"></script>
+</head>
+
+<body>
+<header>
+  <wrapper>
+  </wrapper>
+</header>
+<wrapper>
+  <div id="Tabs1">
+    <ul>
+      <li><a href="#tabs-1"><i class="fa-solid fa-plane"></i><br>
+Flights</a></li>
+      <li><a href="#tabs-2"><i class="fa-solid fa-bed"></i><br>
+Hotel</a></li>
+      <li><a href="#tabs-3"><i class="fa-solid fa-car"></i><br>
+Rentals</a></li>
+      <li><a href="#tabs-4"><i class="fa-duotone fa-solid fa-person-walking-luggage"></i><br>
+Packages</a></li>
+      <li><a href="#tabs-5"><i class="fa-solid fa-umbrella-beach"></i><br>
+Activities</a></li>
+    </ul>
+    <div id="tabs-1">
+      <p>Find Your Flight!</p>
+      <div>
+        <input type="text" placeholder="Leaving From">
+        <input type="text" placeholder="Going to">
+        <input type="date"><input type="date"><select>
+          <option value="0">Number of Travlers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6+">6+</option>
+          </select>
+        <input type="submit" class="search" value="Search">
+      </div>
+    </div>
+	  
+    <div id="tabs-2">
+      <p>Find Your Hotel!</p>
+    <input type="text" placeholder="Where to?">
+	  <input type="date">
+       <select>
+          <option value="0">Number of Travlers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6+">6+</option>
+          </select><input type="submit" class="search" value="Search">
+		</div>
+	  
+	  
+	
+    <div id="tabs-3">
+      <p>Find Your Car Rental!</p>
+	<input type="text" placeholder="Pick-up"><input type="text" placeholder="Drop-off (Same as Pick-up)">
+		<input type="date"><input type="time"><input type="time">
+		<input type="submit" class="search" value="Search">
+    </div>
+	  
+    <div id="tabs-4">
+      <p>Bundle and Save!</p>
+		<input type="text" placeholder="Leaving from"><input type="text" placeholder="Going to ">
+		<input type="date"><input type="date"><select>
+          <option value="0">Number of Travlers</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6+">6+</option>
+          </select><input type="submit" class="search" value="Search">
+    </div>
+	  
+    <div id="tabs-5">
+      <p>Find Things To Do!</p>
+		<input type="text" placeholder="Going to"><input type="date"><input type="date"><input type="submit" class="search" value="Search">
+    </div>
+  </div>
+</wrapper>
+<footer> &copy; 2026, Daniela Andrade.
+<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p></footer>
+<script type="text/javascript">
+$(function() {
+	$( "#Tabs1" ).tabs(); 
+});
+</script>
+</body>
+</html>
