@@ -1,0 +1,433 @@
+<!doctype html>
+<html>
+<head><link rel="stylesheet" href="https://use.typekit.net/zpd8hzo.css">
+<meta charset="UTF-8">
+<title>Resposive Navigation | Daniela Andrade, 2026</title>
+	
+	<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+<style type="text/css">
+body {
+    margin: 0;
+    background-image: url(Dark%20Green%20Background.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgba(244,202,159,1.00);
+}
+wrapper {
+    width: 80%;
+    margin: auto;
+    display: block;
+    padding: 20px;
+    background-color: rgba(3,21,8,0.82);
+}
+section {
+    min-height: 251px; 
+    height: auto;
+}
+#home {
+}
+nav {
+    margin: 0;
+    background-color: rgba(3,21,8,1.00);
+    font-family: "cesso", sans-serif;
+}
+
+nav a {
+    color: rgba(244,202,159,1.00);
+    text-decoration: none;
+}
+ a li {
+    padding: 15px;
+    list-style-type: none;
+    border-bottom: thin solid rgba(244,202,159,1.00);
+}
+ a li:hover {
+    background-color: rgba(51,75,46,1.00);
+}
+	
+	.topnav.responsive a{
+    display:block;
+}
+.topnav.responsive a:not(:first-child) {
+     display: none;
+}
+	.topnav .fa-bars {
+    display: none;
+}
+.topnav .fa-times {
+    display: block;
+}
+.topnav.responsive .fa-bars {
+    display: block;
+}
+.topnav.responsive .fa-times {
+    display: none;
+}
+
+h1 {
+    color: rgba(255,255,255,1.00);
+    background-image: url(Hollow%20Apothecary%20Botanical%20Emblem.png);
+}
+banner {
+    background-image: url( "back.jpeg");
+    display: block;
+    height: 130px;
+    width: 100%;
+    margin: 0; /* Centers the banner element horizontally on the page */
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: contain;
+}
+	@media (min-width:600px) {
+.topnav a:not(:first-child),.topnav.responsive a:not(:first-child) {
+    display:inline-block;
+     }
+.topnav .fa.fa-bars {
+     display:none;
+     }
+}@media (min-width:600px) {
+    #myTopnav {
+        text-align: center; /* This pushes all your links to the exact middle */
+    }
+    .topnav a:not(:first-child), .topnav.responsive a:not(:first-child) {
+        display: inline-block;
+        padding-left: 20px; 
+        padding-right: 20px;
+    }
+    .topnav a.icon {
+        display: none; 
+    }
+}
+	.promo-container {
+  position: relative;
+  width: 100%; 
+  margin: 0 auto; 
+}
+
+
+.responsive-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.shop-button {
+    position: absolute;
+    top: 89%; 
+    left: 20%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgba(14,34,18,1.00);
+    color: rgba(244,202,159,1.00);
+    padding-top: 0px;
+    padding-right: 24px;
+    padding-left: 24px;
+    padding-bottom: 4px;
+    font-family: "cesso", sans-serif;
+    text-decoration: none;
+    border-left: 1px solid rgba(244,202,159,1.00);
+    border-right: 1px solid rgba(244,202,159,1.00);
+    border-bottom: 1px solid rgba(244,202,159,1.00);
+    border-top: 1px inset rgba(244,202,159,1.00);
+    transition: background-color 0.3s;
+    font-size: small;
+}
+
+.shop-button:hover {
+  background-color: rgba(51,75,46,1.00);
+}
+	h2{
+    font-family: "cesso", sans-serif;
+    background-position: 0% 0%;
+    text-align: center;
+	}
+	h3{
+    font-family: "cesso", sans-serif;
+    background-position: 0% 0%;
+    text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: medium;
+	}
+	
+	.product-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* 1 column on mobile */
+    gap: 20px; 
+    padding: 20px 0;
+}
+
+.product-card {
+    background-color: rgba(14,34,18,0.8);
+    border: 1px solid rgba(244,202,159,0.5); 
+    padding: 15px;
+    text-align: center;
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-bottom: 15px;
+}
+
+.product-card h4 {
+    color: rgba(244,202,159,1.00);
+    margin: 0 0 10px 0;
+    font-family: "cesso", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.product-card .price {
+    color: rgba(244,202,159,1.00);
+    margin: 0;
+}
+
+/* Tablet view: 2 columns */
+@media (min-width: 600px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Desktop view: 4 columns */
+@media (min-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+	
+	.product-card {
+    background-color: rgba(14,34,18,0.8);
+    border: 1px solid rgba(244,202,159,0.5); 
+    padding: 15px;
+    text-align: center;
+    
+    transition: transform 0.4s ease, border-color 0.4s ease, box-shadow 0.4s ease;
+    overflow: hidden; 
+}
+
+.product-card img {
+    width: 100%;
+    height: auto; 
+    display: block;
+    margin-bottom: 15px;
+    /* NEW: Controls the image zoom speed */
+    transition: transform 0.5s ease; 
+}
+
+/* --- The Hover Effects --- */
+
+/* 1. Lifts the card, deepens the shadow, and solidifies the tan border */
+.product-card:hover {
+    transform: translateY(-8px); 
+    border-color: rgba(244,202,159,1.00); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.6); 
+}
+
+/* 2. Slightly zooms the product image inward */
+.product-card:hover img {
+    transform: scale(1.05); 
+}
+	.contact-banner {
+    background-color: rgba(14,34,18,0.9); /* Deep apothecary green */
+    border-top: 1px solid rgba(244,202,159,0.5); /* Subtle tan border */
+    border-bottom: 1px solid rgba(244,202,159,0.5);
+    text-align: center;
+    padding: 60px 20px;
+    margin: 40px 0; /* Adds breathing room above and below the banner */
+}
+
+.contact-banner p {
+    color: rgba(244,202,159,0.8);
+    font-family: 'Raleway', sans-serif; /* Keeps paragraph text easy to read */
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+/* Contact Button Styling */
+.contact-button {
+    background-color: transparent;
+    color: rgba(244,202,159,1.00);
+    padding: 12px 35px;
+    font-family: "cesso", sans-serif;
+    text-decoration: none;
+    border: 1px solid rgba(244,202,159,1.00);
+    transition: background-color 0.4s ease, color 0.4s ease;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+/* Inverts the colors smoothly when hovered */
+.contact-button:hover {
+    background-color: rgba(244,202,159,1.00);
+    color: rgba(14,34,18,1.00); 
+}
+	footer {
+    color: rgba(242,198,154,1.00);
+    text-align: center;
+    background-color: rgba(2,19,7,1.00);
+    padding: 25px 20px;
+    margin: 0 -24px;
+    font-size: 0.85rem;
+}
+	
+</style>
+
+	<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+
+		
+</script>
+</head>
+
+<body>
+<wrapper>
+  <header>
+	  <banner>
+	  </banner>
+	  
+    <nav class="topnav responsive" id="myTopnav">
+        <a href="javascript:void(0);" class="icon"
+     onclick="myFunction()">
+  <i class="fa fa-bars"></i><i class="fa fa-times"></i>
+	  
+		
+       <a href="#home"> <li>The Hollow&nbsp;&nbsp;</li>
+       </a>
+        <a href="#services"><li>Tea&nbsp;&nbsp;</li>
+        </a>
+       <a href="#contact"> <li>Herbs&nbsp;&nbsp;</li>
+       </a><a href="#candles"> <li> Candles&nbsp;&nbsp;</li>
+       </a><a href="#contactme"> <li>Contact Us&nbsp;&nbsp;</li>
+       </a>
+      
+			
+		</a>
+	  </nav>
+	  
+  </header>
+    <main>
+      <section id="home">
+        <div class="promo-container">
+  <img src="spellbound.png" alt="Seasonal Halloween Collection" class="responsive-img">
+  <a href="#shop" class="shop-button">Shop Here</a>
+</div>
+		  
+      <section id="services">
+    <h2>Shop our other Tea Magical Flavors&nbsp; &nbsp;&nbsp;</h2> 
+    <h3>Brewed Fresh to Order</h3>
+    
+    <div class="product-grid">
+        <!-- Product 1 -->
+        <div class="product-card">
+            <img src="Tea1.png
+					" alt="Witches Brew">
+            <h4>Witches Brew </h4>
+            <p class="price">$14.00</p>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+            <img src="Tea2.png" alt="Midnight Chamomile">
+            <h4>Pumpkin Chai&nbsp;</h4>
+            <p class="price">$16.00</p>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+            <img src="Tea3.png" alt="Autumn Harvest Spice">
+            <h4>Huanted Hibiscus&nbsp;</h4>
+            <p class="price">$16.00</p>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+            <img src="Tea4.png" alt="Blackberry Sage">
+            <h4>Midnight Blossom&nbsp;&nbsp;</h4>
+            <p class="price">$14.00</p>
+        </div>
+    </div>
+</section>
+      <section id="contact">
+        <h2>Herbs</h2><section id="herbs">
+        <h2>Botanical Herbs &amp Roots</h2>
+        <h3>Ethically Sourced for Ritual &amp Remedy</h3>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="herb1.png" alt="Dried Mugwort">
+                <h4>Rosemary&nbsp;</h4>
+                <p class="price">$8.00</p>
+          </div>
+          <div class="product-card">
+            <img src="herb2.png
+			" alt="Lavender Flowers">
+            <h4>Lavender Flowers</h4>
+              <p class="price">$8.00</p>
+            </div>
+            <div class="product-card">
+              <img src="herb3.png" alt="Rose Petals">
+                <h4>Dried Mugwort&nbsp;</h4>
+                <p class="price">$8.00</p>
+          </div>
+            <div class="product-card">
+              <img src="herb4.png" alt="White Sage">
+                <h4>Basil&nbsp;</h4>
+                <p class="price">$8.00</p>
+          </div>
+        </div>
+      </section>
+		  
+		<section id="candles">
+        <h2>Hand-Poured Ritual Candles</h2>
+        <h3>Crafted with Essential Oils &amp Soy Wax</h3>
+        
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="candle1.png" alt="Midnight Moon Candle">
+                <h4>Midnight Moon</h4>
+                <p class="price">$20.00</p>
+            </div>
+            <div class="product-card">
+                <img src="candle2.png" alt="Protection Spell Candle">
+                <h4>Protection Spell</h4>
+                <p class="price">$20.00</p>
+            </div>
+            <div class="product-card">
+                <img src="candle3.png" alt="Amber & Oakmoss Candle">
+                <h4>Amber &amp Oakmoss</h4>
+                <p class="price">$20.00</p>
+            </div>
+            <div class="product-card">
+                <img src="candle4.png" alt="Sweetgrass Candle">
+                <h4>Sweetgrass Hearth</h4>
+                <p class="price">$20.00</p>
+            </div>
+        </div>
+      </section>
+		  <section id="contactme" class="contact-banner">
+        <h2>Contact the Apothecary</h2>
+        <p>Inquire about custom herbal blends, ritual goods, or upcoming seasonal offerings.</p>
+        <a href="mailto:hello@thehollow.com" class="contact-button">Send a Message</a>
+      </section>
+
+    </main>
+   <footer><div> &copy; 2026, Daniela Andrade.
+<p>This is a fictitious web page created solely for the purpose of education and training. All products and people associated with this web page are also fictitious. Any resemblance to real brands, products, or people is purely coincidental. Information provided about the product is also fictitious and should not be construed to be representative of actual products on the market in a similar product category.</p>
+			</div> 
+	  </footer>
+</wrapper>
+</body>
+</html>
